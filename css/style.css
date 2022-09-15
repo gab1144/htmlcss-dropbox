@@ -20,6 +20,17 @@ header {
   background-color: white;
 }
 
+main {
+  padding-top: 80px;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .flex {
   display: flex;
 }
@@ -64,9 +75,6 @@ header ul, footer ul {
   text-decoration: none;
 }
 
-main {
-  padding-top: 80px;
-}
 
 .container {
   width: 55%;
@@ -227,4 +235,21 @@ main {
   background-color: purple;
   width: 600px;
   height: 500px;
+}
+
+.footer-top, .footer-bottom {
+  width: 100%;
+}
+
+footer .menu li a {
+  color: white;
+}
+
+.footer-top {
+  margin-bottom: 100px;
+}
+
+footer hr {
+  width: 75px;
+  margin-bottom: 50px;
 }
