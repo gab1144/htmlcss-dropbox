@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: HelveticaNow,Helvetica,sans-serif;
+}
+
+/*header e menu fissato sempre sopra agli altri elementi con z-index*/
+header {
+  position: fixed;
+  height: 80px;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.flex {
+  display: flex;
+}
+
+.dir-row {
+  flex-direction: row;
+}
+
+.sp-btw {
+  justify-content: space-between;
+}
+
+.align-cent {
+  align-items: center;
+}
+
+.logo {
+  height: 100%;
+}
+
+.menu a, .logo a {
+  margin-right: 30px;
+}
+
+header ul, footer ul {
+  list-style: none;
+}
+
+.menu li a {
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  padding-top: 80px;
+}
