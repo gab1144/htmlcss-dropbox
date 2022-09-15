@@ -55,3 +55,12 @@ header ul, footer ul {
 main {
   padding-top: 80px;
 }
+
+.container {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.jumbotron .container {
+  width: 65%;
+}
