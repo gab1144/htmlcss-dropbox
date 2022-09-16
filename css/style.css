@@ -129,12 +129,15 @@ h1 {
   width: 600px;
 }
 
-.jumbotron .bottone {
-  margin-top: 30px;
+.bottone{
   padding: 5px;
   background-color: blue;
   width: fit-content;
   height: fit-content;
+}
+
+.jumbotron .bottone {
+  margin-top: 30px;
 }
 
 .jumbotron .bottone a {
@@ -154,7 +157,6 @@ h1 {
 }
 
 .piano-business {
-  background-color:gold;/*rimuovere*/
   padding-top: 150px;
   padding-bottom: 150px;
 }
@@ -162,25 +164,96 @@ h1 {
 .titolo-radio-b {
   height: 170px;
   width: 100%;
-  background-color: fuchsia;
+}
+
+.radio-b {
+  padding-top: 50px;
+}
+
+.radio-b label {
+  margin-right: 20px;
 }
 
 .piani-b{
   width: 100%;
-  height: 700px;
-  background-color: lawngreen;
 }
 
 .piano {
   width: calc(100%/3);
-  height: 100%;
-  background-color:darkblue;
+  padding: 0 10px;
+}
+
+.bordo {
+  border: 1px solid black;
+  height: 630px;
+  width: 100%;
+}
+
+.piano .gruppo {
+  width: 100%;
+  height: 25px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding-top: 3px;
+}
+
+.piano .info {
+  height: 350px;
+  width: 100%;
+  padding-left: 20px;
   padding-right: 20px;
-  border: 1px solid red;
+}
+
+.piano .bottone {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.piano .bottone  a{
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.salienti {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.piano.orz {
+  width: 100%;
+  padding-top: 50px;
+}
+
+.area-bottone {
+  width: 40%;
+  height: 100%;
+}
+
+.piano.orz .bottone{
+  width: fit-content;
+  float: right;
+  position: relative;
+  top: 20px;
+  right: 20px;
+}
+
+.piano.orz .info {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 60%;
+}
+
+.piano.orz .info, .piano.orz .salienti, .piano.orz .bordo {
+  height: auto;
 }
 
 .enterprise {
-  width: 1000px;
+  width: 100%;
   height: 300px;
   background-color: aqua;
 }
