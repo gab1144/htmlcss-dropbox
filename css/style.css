@@ -58,6 +58,10 @@ footer{
   flex-wrap: wrap;
 }
 
+.jus-flx-str{
+  justify-content: flex-start;
+}
+
 .logo {
   height: 100%;
 }
@@ -176,25 +180,44 @@ header ul, footer ul {
 .brand {
   width: 100%;
   background-color: khaki;
-}
-
-.brand-img{
   height: 400px;
-  width: 400px;
 }
 
+.sx {
+  background-color: rebeccapurple;
+  width: 400px;
+  height: 400px;
+  float: left;
+}
+
+.dx {
+  background-color: aqua;
+  width: 400px;
+  height: 400px;
+  float: right;
+  position: relative;
+  top: 0;
+  right: 0;
+}
 
 .brand .card {
-  width: 200px;
-  height: 200px;
-  border: 1px solid red;
-  background-color: lightsalmon;
+  height: calc(100%/2);
+  width: calc(100%/2);
 }
 
-.brand-text { /*da correggere*/
-  background-color: green;
+.brand-txt {
+  padding-top: 40px;
+  padding-left: 430px;
+  padding-right: 430px;
+}
+
+.brand-txt .top, .brand-txt p {
+  margin-bottom: 40px;
+}
+
+.brand-name{
+  height: 100px;
   width: 100%;
-  max-width: 450px;
 }
 
 .prova {
