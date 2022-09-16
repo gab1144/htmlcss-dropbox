@@ -87,34 +87,70 @@ header ul, footer ul {
 
 .jumbotron {
   background-color: rgb(180, 208, 231);
-  height: 735px;
 }
 
 .jumbotron .container {
   width: 65%;
-  padding-top: 100px;
+  padding-top: 75px;
 }
 
 .titolo {
   width: 100%;
-  height: 270px;
-  background-color: coral;
+  font-size: 75px;
 }
 
-.jumbo-buttom{
+h1 {
+  font-size: 50px;
+  line-height: 75px;
+}
+
+.jumbo-bottom{
   width: 100%;
+  height: 320px;
+  padding-top: 50px;
 }
 
-.jumbotron .text {
+.jumbotron .text{
   width: calc(100%/3);
-  height: 400px;
-  background-color: red;
+  font-size: 13px;
+  line-height: 17px;
+  height: 100%;
 }
 
 .img-jumbo{
   width: calc(100%/3*2);
-  height: 400px;
-  background-color: darkolivegreen;
+  height: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.img-jumbo img{
+  width: 600px;
+}
+
+.jumbotron .bottone {
+  margin-top: 30px;
+  padding: 5px;
+  background-color: blue;
+  width: fit-content;
+  height: fit-content;
+}
+
+.jumbotron .bottone a {
+  color: white;
+  text-decoration: none;
+}
+
+.jumbotron span.annulla{
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.jumbotron i{
+  font-size: 30px;
+  padding-bottom: 10px;
 }
 
 .piano-business {
@@ -248,7 +284,7 @@ header ul, footer ul {
   margin: 40px 0;
 }
 
-.text {
+.text:not(.jumbotron .text) {
   width: 300px;
   height: 300px;
   background-color: fuchsia;
