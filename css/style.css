@@ -409,13 +409,20 @@ h2{
   margin-top: 15px;
 }
 
-.partner .bottone a{
+.partner .bottone a {
   color: black;
   text-decoration: none;
+  font-size: 14px;
 }
 
-.partner .text h2{
+.partner .text h2 {
   margin-bottom: 15px;
+  margin-top: 60px;
+  font-size: 18px;
+}
+
+.partner .text p {
+  font-size: 14px;
 }
 
 .info-business {
@@ -423,13 +430,16 @@ h2{
   padding-bottom: 100px;
 }
 
-.area-card {
-}
 
 .card {
   width: calc(100%/3);
   height: calc(100%/2);
-  padding-right: 10px;
+  padding-right: 40px;
+}
+
+.card p{
+  padding-top: 25px;
+  font-size: 12px;
 }
 
 .info-business .card img{
@@ -441,6 +451,16 @@ h2{
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
+.team h2{
+  width: 60%;
+  padding-bottom: 50px;
+}
+
+.team a{
+  font-size: 12px;
+}
+
 
 .brand {
   width: 100%;
