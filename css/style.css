@@ -24,7 +24,7 @@ main {
   padding-top: 60px;
 }
 
-footer{
+footer {
   background-color: black;
   color: white;
   padding-top: 100px;
@@ -54,7 +54,7 @@ footer{
 .align-cent {
   align-items: center;
 }
-.align-strc{
+.align-strc {
   align-items: stretch;
 }
 
@@ -62,7 +62,7 @@ footer{
   flex-wrap: wrap;
 }
 
-.jus-flx-str{
+.jus-flx-str {
   justify-content: flex-start;
 }
 
@@ -121,7 +121,7 @@ header .bottone {
 
 .jumbotron .container {
   width: 65%;
-  padding-top: 175px;
+  padding-top: 50px;
 }
 
 .jumbotron .titolo {
@@ -132,6 +132,7 @@ header .bottone {
 h1 {
   font-size: 50px;
   line-height: 75px;
+  font-weight: 900;
 }
 
 img {
@@ -165,7 +166,7 @@ img {
 
 .bottone{
   padding: 5px;
-  background-color: blue;
+  background-color: rgb(0, 97, 255);
   width: fit-content;
   height: fit-content;
 }
