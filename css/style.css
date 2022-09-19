@@ -11,7 +11,7 @@ body {
 /*header e menu fissato sempre sopra agli altri elementi con z-index*/
 header {
   position: fixed;
-  height: 80px;
+  height: 60px;
   top: 0;
   width: 100%;
   z-index: 999;
@@ -21,7 +21,7 @@ header {
 }
 
 main {
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
 footer{
@@ -74,15 +74,41 @@ footer{
   margin-right: 30px;
 }
 
+.logo a img{
+  width: 90px;
+}
+
 header ul, footer ul {
   list-style: none;
 }
 
+header nav, header ul, header .menu li, .header-dx {
+  height: 100%;
+}
+
+/*
+header nav ul.menu li{
+  display: flex;
+  align-content: center;
+}
+*/
+
 .menu li a {
   color: black;
   text-decoration: none;
+  font-size: 12px;
 }
 
+header .menu li:hover {
+  border-bottom: 2px solid black;
+}
+
+
+header .bottone {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
 
 .container {
   width: 55%;
@@ -216,11 +242,26 @@ img {
   list-style: none;
 }
 
+/*
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.prova::before{
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f007";
+}
+/*
 .piano .info li:nth-child(1) ::before{
   font-family: "Font Awesome 6 Free";
   content: "\f007";
 }
-
+*/
 .piano .info li:nth-child(2) ::before{
 
 }
