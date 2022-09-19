@@ -39,6 +39,10 @@ footer{
   flex-direction: row;
 }
 
+.dir-col {
+  flex-direction: column;
+}
+
 .sp-btw {
   justify-content: space-between;
 }
@@ -94,7 +98,7 @@ header ul, footer ul {
   padding-top: 75px;
 }
 
-.titolo {
+.jumbotron .titolo {
   width: 100%;
   font-size: 75px;
 }
@@ -208,6 +212,26 @@ img {
   padding-right: 20px;
 }
 
+.piano .info ul{
+  list-style: none;
+}
+
+.piano .info li:nth-child(1) ::before{
+
+}
+
+.piano .info li:nth-child(2) ::before{
+
+}
+
+.piano .info li:nth-child(3) ::before{
+
+}
+
+.piano .info li:nth-child(3) ::before{
+
+}
+
 .piano .bottone {
   margin: auto;
   width: 100%;
@@ -276,26 +300,27 @@ img {
 }
 
 .info-business {
-  height: 1250px;
   padding-top: 100px;
-  background-color: slategray;
+  padding-bottom: 100px;
 }
 
 .area-card {
-  background-color: blueviolet;
-  height: 750px;
 }
 
 .card {
   width: calc(100%/3);
-  border: 1px solid red;
-  background-color: lightsalmon;
   height: calc(100%/2);
+  padding-right: 10px;
+}
+
+.info-business .card img{
+  width: 235px;
+  align-self: center;
 }
 
 .team {
-  height: 200px;
-  background-color: darkcyan;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .brand {
@@ -324,12 +349,53 @@ img {
 .brand .card {
   height: calc(100%/2);
   width: calc(100%/2);
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+svg {
+  fill: white;
+}
+
+.brand .sx .card:nth-child(1){
+  background-color: rgb(162, 211, 155);
+  border: 10px solid rgb(203, 218, 196);
+}
+
+.brand .sx .card:nth-child(2){
+  background-color: rgb(97, 8, 43);
+}
+
+.brand .sx .card:nth-child(3){
+  background-color: rgb(0, 147, 206);
+}
+
+.brand .sx .card:nth-child(4){
+  background-color: rgb(255, 28, 28);
+}
+
+.brand .dx .card:nth-child(1){
+  background-color: rgb(213, 0, 31);
+}
+
+.brand .dx .card:nth-child(2){
+  background-color: rgb(180, 208, 231);
+}
+
+.brand .dx .card:nth-child(3){
+  background-color: rgb(13, 36, 129);
+}
+
+.brand .dx .card:nth-child(4){
+  background-color: rgb(255, 216, 48);
 }
 
 .brand-txt {
   padding-top: 40px;
-  padding-left: 430px;
-  padding-right: 430px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 .brand-txt .top, .brand-txt p {
@@ -342,20 +408,26 @@ img {
 }
 
 .prova {
-  height: 360px;
   background-color: rgb(180, 208, 231);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .prova-titolo {
-  height: 360px;
   width: 60%;
-  background-color:hotpink;
 }
 
 .prova-button {
-  height: 360px;
   width: 40%;
-  background-color:chocolate;
+}
+
+.prova-button .bottone{
+  background-color: white;
+}
+
+.prova-button .bottone a{
+  color: black;
+  text-decoration: none;
 }
 
 .q-and-a {
@@ -363,10 +435,16 @@ img {
 }
 
 .question{
-  height: 200px;
   width: 100%;
-  background-color: chartreuse;
   margin: 40px 0;
+}
+
+.question p {
+  display: none;
+}
+
+.question h3:hover ~ p {
+  display: block;
 }
 
 .text:not(.jumbotron .text) {
