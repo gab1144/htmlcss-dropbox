@@ -121,7 +121,7 @@ header .bottone {
 
 .jumbotron .container {
   width: 65%;
-  padding-top: 75px;
+  padding-top: 175px;
 }
 
 .jumbotron .titolo {
@@ -196,12 +196,17 @@ img {
 }
 
 .titolo-radio-b {
-  height: 170px;
+  height: 100%;
   width: 100%;
+}
+
+h2{
+  font-size: 30px;
 }
 
 .radio-b {
   padding-top: 50px;
+  padding-bottom: 40px;
 }
 
 .radio-b label {
@@ -219,28 +224,66 @@ img {
 
 .bordo {
   border: 1px solid black;
-  height: 630px;
+  height: 720px;
   width: 100%;
 }
 
 .piano .gruppo {
   width: 100%;
-  height: 25px;
-  text-align: center;
+  height: 35px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
   border-bottom: 1px solid black;
-  padding-top: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 12px;
+}
+
+.piano .gruppo span{
+  margin-left: 5px;
 }
 
 .piano .info {
-  height: 350px;
+  height: 285px;
   width: 100%;
+}
+
+.padding-piano {
   padding-left: 20px;
   padding-right: 20px;
 }
 
+.piano .info h3{
+  padding-top: 30px;
+}
+
+.piano .info span {
+  display: block;
+  font-size: 12px;
+}
+
+.piano .info h3 + span{
+  padding-top: 20px;
+}
+
+.piano .info h3 + span + span{
+  padding-top: 10px;
+  padding-bottom: 30px;
+  color: rgb(166, 151, 158);
+}
+
 .piano .info ul{
   list-style: none;
+  font-size: 12px;
+  margin-bottom: 30px;
 }
+
+.piano .info ul li{
+  margin-bottom: 20px;
+}
+
+
 
 /*
 .icon::before {
@@ -278,14 +321,24 @@ img {
   margin: auto;
   width: 100%;
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .piano .bottone  a{
   color: white;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 12px;
+}
+
+.link-acquista-ora{
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+.link-acquista-ora hr{
+  width: 50px;
+  margin-top: 20px;
 }
 
 .salienti {
@@ -293,10 +346,33 @@ img {
   padding-right: 20px;
 }
 
+.salienti h4{
+  font-size: 12px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.salienti ul{
+  list-style: none;
+}
+
+.salienti ul li{
+  font-size: 12px;
+  padding-bottom: 20px;
+}
 
 .piano.orz {
   width: 100%;
   padding-top: 50px;
+}
+
+.piano.orz h3 + span{
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.piano.orz p {
+  font-size: 12px;
 }
 
 .area-bottone {
@@ -316,6 +392,7 @@ img {
   padding-left: 20px;
   padding-right: 20px;
   width: 60%;
+  padding-bottom: 30px;
 }
 
 .piano.orz .info, .piano.orz .salienti, .piano.orz .bordo {
