@@ -20,6 +20,7 @@ header {
   background-color: white;
 }
 
+/*padding per mantenere effetto menu fissato senza coprire parte del main*/
 main {
   padding-top: 60px;
 }
@@ -302,13 +303,8 @@ h2{
 
 .piano .info ul li {
   margin-bottom: 20px;
+  display: flex;
 }
-
-/*
-.piano .info ul li span {
-  display: block;
-}
-*/
 
 .piano .info li::before, .piano .salienti li::before {
   display: inline-block;
@@ -318,28 +314,28 @@ h2{
   -webkit-font-smoothing: antialiased;
 }
 
-.piano .info li:nth-child(1) ::before{
+.piano .info li:nth-child(1)::before{
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   margin-right: 5px;
   content: "\f007";
 }
 
-.piano .info li:nth-child(2) ::before{
+.piano .info li:nth-child(2)::before{
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   margin-right: 5px;
   content: "\f07b";
 }
 
-.piano .info li:nth-child(3) ::before{
+.piano .info li:nth-child(3)::before{
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   margin-right: 5px;
   content: "\f1e0";
 }
 
-.piano-business .piano:nth-child(2) .info li:nth-child(1) ::before{
+.piano-business .piano:nth-child(2) .info li:nth-child(1)::before{
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   margin-right: 5px;
@@ -396,6 +392,7 @@ h2{
 .salienti ul li{
   font-size: 12px;
   padding-bottom: 20px;
+  display: flex;
 }
 
 .piano.orz {
