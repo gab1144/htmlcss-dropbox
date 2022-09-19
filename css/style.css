@@ -217,7 +217,8 @@ img {
 }
 
 .piano .info li:nth-child(1) ::before{
-
+  font-family: "Font Awesome 6 Free";
+  content: "\f007";
 }
 
 .piano .info li:nth-child(2) ::before{
@@ -260,12 +261,12 @@ img {
 .area-bottone {
   width: 40%;
   height: 100%;
+  position: relative;
 }
 
 .piano.orz .bottone{
   width: fit-content;
-  float: right;
-  position: relative;
+  position: absolute;
   top: 20px;
   right: 20px;
 }
@@ -326,24 +327,25 @@ img {
 .brand {
   width: 100%;
   background-color: khaki;
-  height: 400px;
 }
 
-.sx {
-  background-color: rebeccapurple;
-  width: 400px;
-  height: 400px;
-  float: left;
+.square {
+  width: calc(100%/3);
 }
 
-.dx {
-  background-color: aqua;
-  width: 400px;
-  height: 400px;
-  float: right;
+.inner-square {
+  padding-top: 100%;
+  height: 0;
+  overflow: hidden;
   position: relative;
+}
+
+.square-content{
+  position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .brand .card {
@@ -353,13 +355,12 @@ img {
   padding-right: 40px;
 }
 
-svg {
-  fill: white;
+.brand .card img {
+  filter:invert(100%);
 }
 
 .brand .sx .card:nth-child(1){
   background-color: rgb(162, 211, 155);
-  border: 10px solid rgb(203, 218, 196);
 }
 
 .brand .sx .card:nth-child(2){
@@ -390,21 +391,19 @@ svg {
   background-color: rgb(255, 216, 48);
 }
 
-.brand-txt {
+.square-content.txt {
   padding-top: 40px;
   padding-left: 30px;
   padding-right: 30px;
-  height: 100%;
   overflow-y: scroll;
 }
 
-.brand-txt .top, .brand-txt p {
-  margin-bottom: 40px;
+.square-content.txt img{
+  width: 40%;
 }
 
-.brand-name{
-  height: 100px;
-  width: 100%;
+.square-content .card:active{
+  border: 10px solid rgba(255, 255, 255, 0.648);
 }
 
 .prova {
