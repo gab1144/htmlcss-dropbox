@@ -464,7 +464,7 @@ h2{
 
 .brand {
   width: 100%;
-  background-color: khaki;
+  background-color: rgb(245, 245, 245);
 }
 
 .square {
@@ -530,14 +530,25 @@ h2{
 }
 
 .square-content.txt {
-  padding-top: 40px;
-  padding-left: 30px;
+  padding-top: 50px;
+  padding-left: 40px;
   padding-right: 30px;
   overflow-y: scroll;
+  font-size: 12px;
 }
 
 .square-content.txt img{
-  width: 40%;
+  width: 50%;
+}
+
+.square-content.txt hr{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 70px;
+}
+
+.square-content.txt p{
+  margin-bottom: 30px;
 }
 
 .square-content .card:active{
