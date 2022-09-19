@@ -220,13 +220,20 @@ h2{
 
 .piano {
   width: calc(100%/3);
-  padding: 0 10px;
+  margin-right:25px;
+}
+
+.piano:last-of-type:not(piano.orz){
+  margin-right:0;
 }
 
 .bordo {
   border: 1px solid black;
-  height: 720px;
   width: 100%;
+}
+
+.bordo:not(.piano.orz .bordo) {
+  min-height: 720px;
 }
 
 .piano .gruppo {
@@ -246,8 +253,11 @@ h2{
 }
 
 .piano .info {
-  height: 285px;
   width: 100%;
+}
+
+.piano .info:not(.piano.orz .info) {
+  min-height: 285px;
 }
 
 .padding-piano {
@@ -444,14 +454,20 @@ h2{
 
 .info-business {
   padding-top: 100px;
-  padding-bottom: 100px;
 }
 
+.area-card{
+  margin-top: 50px;
+}
 
 .card {
   width: calc(100%/3);
   height: calc(100%/2);
   padding-right: 40px;
+}
+
+.area-card .card{
+  margin-bottom: 40px;
 }
 
 .card p{
