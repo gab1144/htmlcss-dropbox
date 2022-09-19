@@ -563,6 +563,7 @@ h2{
 
 .prova-titolo {
   width: 60%;
+  color: rgb(97, 8, 43);
 }
 
 .prova-button {
@@ -571,27 +572,61 @@ h2{
 
 .prova-button .bottone{
   background-color: white;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .prova-button .bottone a{
   color: black;
   text-decoration: none;
+  font-size: 11px;
 }
 
 .q-and-a {
   padding: 100px 0;
 }
 
+
+.q-and-a h2{
+  margin-bottom: 50px;
+}
+
 .question{
   width: 100%;
   margin: 40px 0;
+  position: relative;
+}
+
+.fa-chevron-down, .fa-chevron-up{
+  position: absolute;
+  right: 30px;
+  top: 0px;
+  font-size: 12px;
+}
+
+.fa-chevron-up {
+  display: none;
+}
+
+.question h3{
+  font-size: 12px;
 }
 
 .question p {
   display: none;
+  padding-top: 50px;
+  font-size: 12px;
 }
 
 .question h3:hover ~ p {
+  display: block;
+}
+
+.question h3:hover ~ .fa-chevron-down {
+  display: none;
+}
+
+.question h3:hover ~ .fa-chevron-up {
   display: block;
 }
 
