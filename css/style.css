@@ -25,6 +25,7 @@ main {
   padding-top: 60px;
 }
 
+/*formattazione footer*/
 footer {
   background-color: black;
   color: white;
@@ -32,6 +33,24 @@ footer {
   padding-bottom: 50px;
 }
 
+/*formattazione titolo h1 (jumbotron)*/
+h1 {
+  font-size: 50px;
+  line-height: 75px;
+  font-weight: 900;
+}
+
+/*formattazione titolo h2*/
+h2 {
+  font-size: 30px;
+}
+
+/*dimensione immagini*/
+img {
+  width: 100%;
+}
+
+/*--classi per flexbox--*/
 .flex {
   display: flex;
 }
@@ -48,7 +67,7 @@ footer {
   justify-content: space-between;
 }
 
-.jus-cent{
+.jus-cent {
   justify-content: center;
 }
 
@@ -66,32 +85,40 @@ footer {
 .jus-flx-str {
   justify-content: flex-start;
 }
+/*--/classi per flexbox--*/
 
+/*dimensione area logo e menu a sinistra*/
 .logo {
   height: 100%;
 }
 
+/*margini link*/
 .menu a, .logo a {
   margin-right: 30px;
 }
 
-.logo a img{
+/*dimensione logo*/
+.logo a img {
   width: 90px;
 }
 
+/*formattazione marcatori liste header e footer*/
 header ul, footer ul {
   list-style: none;
 }
 
+/*dimensione nav header, liste header, punti liste classi menu e menu header a destra*/
 header nav, header ul, header .menu li, .header-dx {
   height: 100%;
 }
 
-header nav ul.menu li{
+/*flex liste menu header*/
+header nav ul.menu li {
   display: flex;
   align-items: center;
 }
 
+/*formattazione link liste menu header*/
 header nav ul.menu li a {
   color: black;
   text-decoration: none;
@@ -99,11 +126,12 @@ header nav ul.menu li a {
   height: fit-content;
 }
 
+/*hover liste menu header*/
 header .menu li:hover {
   border-bottom: 2px solid black;
 }
 
-
+/*formattazione bottone header*/
 header .bottone {
   color: white;
   text-decoration: none;
@@ -112,71 +140,69 @@ header .bottone {
   padding-right: 10px;
 }
 
+/*dimensione e margini container*/
 .container {
   width: 55%;
   margin: 0 auto;
 }
 
+/*sfondo jumbotron*/
 .jumbotron {
   background-color: rgb(180, 208, 231);
 }
 
+/*dimensioni container jumbotron*/
 .jumbotron .container {
   width: 65%;
   padding-top: 50px;
 }
 
+/*formattazione titolo jumbotron*/
 .jumbotron .titolo {
   width: 100%;
   font-size: 75px;
 }
 
-h1 {
-  font-size: 50px;
-  line-height: 75px;
-  font-weight: 900;
-}
-
-img {
-  width: 100%;
-}
-
-.jumbo-bottom{
+/*dimensione bottom jumbotron*/
+.jumbo-bottom {
   width: 100%;
   height: 350px;
   padding-top: 50px;
 }
 
-.jumbotron .text{
+/*formattazione testo jumbotron*/
+.jumbotron .text {
   width: calc(100%/3);
   font-size: 13px;
   line-height: 17px;
   height: 100%;
 }
 
-.img-jumbo{
+/*dimensione area immagine jumbotron*/
+.img-jumbo {
   width: calc(100%/3*2);
   height: 100%;
-  position: relative;
-  left: 0;
-  top: 0;
 }
 
-.img-jumbo img{
+/*dimensione immagine jumbotron*/
+.img-jumbo img {
   width: 600px;
 }
 
+/*fomattazione linea*/
 hr {
   color: rgb(165, 165, 165);
 }
 
-.bottone{
+/*formattazione bottone*/
+.bottone {
   padding: 5px;
   background-color: rgb(0, 97, 255);
   width: fit-content;
   height: fit-content;
 }
 
+/*formattazione bottone jumbotron*/
 .jumbotron .bottone {
   margin-top: 30px;
   padding-left: 15px;
@@ -185,68 +211,77 @@ hr {
   padding-bottom: 10px;
 }
 
+/*formattazione link bottone jumbotron*/
 .jumbotron .bottone a {
   color: white;
   text-decoration: none;
 }
 
-.jumbotron span.annulla{
+/*formattazione span jumbotron*/
+.jumbotron span.annulla {
   display: block;
   margin-top: 20px;
   margin-bottom: 50px;
 }
 
-.jumbotron i{
+/*formattazione icona jumbotron*/
+.jumbotron i {
   font-size: 30px;
   padding-bottom: 10px;
 }
 
+/*formattazione senzione piano business*/
 .piano-business {
   padding-top: 100px;
   padding-bottom: 50px;
 }
 
+/*formattazione area titolo e radio button*/
 .titolo-radio-b {
   height: 100%;
   width: 100%;
 }
 
-h2{
-  font-size: 30px;
-}
-
+/*formattazione rafio button*/
 .radio-b {
   padding-top: 50px;
   padding-bottom: 40px;
 }
 
+/*formattazione scritta radio button*/
 .radio-b label {
   margin-right: 20px;
   font-size: 12px;
 }
 
-.piani-b{
+/*dimensione area piani business*/
+.piani-b {
   width: 100%;
 }
 
+/*formattazione scheda piano business*/
 .piano {
   width: calc(100%/3);
   margin-right:25px;
 }
 
-.piano:last-of-type:not(piano.orz){
+/*formattazione scheda piano business tranne piano in orizzontale*/
+.piano:last-of-type:not(piano.orz) {
   margin-right:0;
 }
 
+/*formattazione bordo piano business*/
 .bordo {
   border: 1px solid black;
   width: 100%;
 }
 
+/*formattazione bordo tranne bordo piano in orizzontale*/
 .bordo:not(.piano.orz .bordo) {
   min-height: 720px;
 }
 
+/*formattazione gruppo utente del piano*/
 .piano .gruppo {
   width: 100%;
   height: 35px;
@@ -259,53 +294,64 @@ h2{
   font-size: 12px;
 }
 
-.piano .gruppo span{
+/*formattazione span gruppo utenti piano*/
+.piano .gruppo span {
   margin-left: 5px;
 }
 
+/*formattazione area informazioni piano*/
 .piano .info {
   width: 100%;
 }
 
+/*formattazione area informazioni piano tranne piano in orizzontale*/
 .piano .info:not(.piano.orz .info) {
   min-height: 285px;
 }
 
+/*padding testo interno a scheda piano*/
 .padding-piano {
   padding-left: 20px;
   padding-right: 20px;
 }
 
+/*formattazione titolo h3 area informazioni piano*/
 .piano .info h3 {
   padding-top: 30px;
 }
 
+/*formattazione span area informazioni piano*/
 .piano .info span {
   display: block;
   font-size: 12px;
 }
 
+/*formattazione primo span dopo titolo h3 area informazioni piano*/
 .piano .info h3 + span {
   padding-top: 20px;
 }
 
+/*formattazione secondo span dopo titolo h3 area informazioni piano*/
 .piano .info h3 + span + span {
   padding-top: 10px;
   padding-bottom: 30px;
   color: rgb(166, 151, 158);
 }
 
+/*formattazione lista area informazioni piano*/
 .piano .info ul {
   list-style: none;
   font-size: 12px;
   margin-bottom: 30px;
 }
 
+/*formattazione punti lista informazioni piano*/
 .piano .info ul li {
   margin-bottom: 20px;
   display: flex;
 }
 
+/*--istruzioni per icona prima di ogni punto della lista informazioni del piano--*/
 .piano .info li::before, .piano .salienti li::before {
   display: inline-block;
   font-style: normal;
@@ -314,42 +360,36 @@ h2{
   -webkit-font-smoothing: antialiased;
 }
 
-.piano .info li:nth-child(1)::before{
+.piano .info li:nth-child(1)::before {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   margin-right: 5px;
   content: "\f007";
 }
 
-.piano .info li:nth-child(2)::before{
+.piano .info li:nth-child(2)::before {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   margin-right: 5px;
   content: "\f07b";
 }
 
-.piano .info li:nth-child(3)::before{
+.piano .info li:nth-child(3)::before {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   margin-right: 5px;
   content: "\f1e0";
 }
 
-.piano-business .piano:nth-child(2) .info li:nth-child(1)::before{
+.piano-business .piano:nth-child(2) .info li:nth-child(1)::before {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   margin-right: 5px;
   content: "\f0c0";
 }
+/*--/istruzioni per icona prima di ogni punto della lista informazioni del piano--*/
 
-.piano .salienti li::before {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  margin-right: 5px;
-  content: "\f00c";
-  color: rgb(36, 104, 255);
-}
-
+/*formattazione bottone piano business*/
 .piano .bottone {
   margin: auto;
   width: 100%;
@@ -358,70 +398,92 @@ h2{
   padding-right: 15px;
 }
 
-.piano .bottone  a{
+/*formattazione link bottone piano business*/
+.piano .bottone  a {
   color: white;
   text-decoration: none;
   font-size: 12px;
 }
 
-.link-acquista-ora{
+/*formattazione link dopo bottone*/
+.link-acquista-ora {
   padding-top: 20px;
   font-size: 12px;
 }
 
-.link-acquista-ora hr{
+/*formattazione linea dopo link*/
+.link-acquista-ora hr {
   width: 50px;
   margin-top: 20px;
 }
 
+/*formattazione area punti salienti del piano*/
 .salienti {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.salienti h4{
+/*formattazione titolo h4 area punti salienti del piano*/
+.salienti h4 {
   font-size: 12px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.salienti ul{
+/*formattazione marcatore lista punti salienti*/
+.salienti ul {
   list-style: none;
 }
 
-.salienti ul li{
+/*formattazione punti lista punti salienti*/
+.salienti ul li {
   font-size: 12px;
   padding-bottom: 20px;
   display: flex;
 }
 
+/*icona lista punti salienti del piano*/
+.piano .salienti li::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 5px;
+  content: "\f00c";
+  color: rgb(36, 104, 255);
+}
+
+/*dimensione area piano in orizzontale*/
 .piano.orz {
   width: 100%;
   padding-top: 50px;
 }
 
-.piano.orz h3 + span{
+/*formattazione span dopo titolo h3 piano in orizzontale*/
+.piano.orz h3 + span {
   font-weight: 700;
   padding-bottom: 20px;
 }
 
+/*formattazione paragrafo piano in orizzontale*/
 .piano.orz p {
   font-size: 12px;
 }
 
+/*formattazione area bottone piano in orizzontale*/
 .area-bottone {
   width: 40%;
   height: 100%;
   position: relative;
 }
 
-.piano.orz .bottone{
+/*formattazione e posizione bottone piano in orizzontale*/
+.piano.orz .bottone {
   width: fit-content;
   position: absolute;
   top: 20px;
   right: 20px;
 }
 
+/*formattazione sezione informazioni piano in orizzontale*/
 .piano.orz .info {
   padding-left: 20px;
   padding-right: 20px;
@@ -429,88 +491,105 @@ h2{
   padding-bottom: 30px;
 }
 
-.piano.orz .info, .piano.orz .salienti, .piano.orz .bordo {
-  height: auto;
-}
-
+/*formattazione container sezione partner*/
 .partner .container {
   padding: 50px 0;
 }
 
-.partner .bottone{
+/*formattazione bottone sezione partner*/
+.partner .bottone {
   background-color: white;
   border: 1px solid black;
   margin-top: 15px;
 }
 
+/*formattazione link bottone sezione partner*/
 .partner .bottone a {
   color: black;
   text-decoration: none;
   font-size: 14px;
 }
 
+/*formattazione titolo h2 sezione partner*/
 .partner .text h2 {
   margin-bottom: 15px;
   margin-top: 60px;
   font-size: 18px;
 }
 
+/*formattazione paragrafo sezione partner*/
 .partner .text p {
   font-size: 14px;
 }
 
+/*dimensione immagine sezione partner*/
+.img-partner{
+  width: 600px;
+}
+
+/*formattazione sezione informazioni Dropbox Business*/
 .info-business {
   padding-top: 100px;
 }
 
-.area-card{
+/*formattazione area card sezione informazioni Dropbox Business*/
+.area-card {
   margin-top: 50px;
 }
 
+/*formattazione card*/
 .card {
   width: calc(100%/3);
   height: calc(100%/2);
   padding-right: 40px;
 }
 
-.area-card .card{
+/*formattazione card sezione informazioni Dropbox Business*/
+.area-card .card {
   margin-bottom: 40px;
 }
 
-.card p{
+/*formattazione paragrafo card sezione informazioni Dropbox Business*/
+.card p {
   padding-top: 25px;
   font-size: 12px;
 }
 
-.info-business .card img{
+/*formattazione immagine card sezione informazioni Dropbox Business*/
+.info-business .card img {
   width: 235px;
   align-self: center;
 }
 
+/*formattazione sezione team*/
 .team {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.team h2{
+/*formattazione titolo h2 sezione team*/
+.team h2 {
   width: 60%;
   padding-bottom: 50px;
 }
 
-.team a{
+/*formattazione link sezione team*/
+.team a {
   font-size: 12px;
 }
 
-
+/*formattazione sezione brand*/
 .brand {
   width: 100%;
   background-color: rgb(245, 245, 245);
 }
 
+/*dimensione quadrati*/
 .square {
   width: calc(100%/3);
 }
 
+/*--istruzioni per rapporto fisso tra lati dei quadrati--*/
 .inner-square {
   padding-top: 100%;
   height: 0;
@@ -518,14 +597,16 @@ h2{
   position: relative;
 }
 
-.square-content{
+.square-content {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
+/*--/istruzioni per rapporto fisso tra latidei quadrati--*/
 
+/*formattazione card con loghi brand*/
 .brand .card {
   height: calc(100%/2);
   width: calc(100%/2);
@@ -533,42 +614,46 @@ h2{
   padding-right: 40px;
 }
 
+/*formattazione immagini loghi brand (invert per modificare il colore)*/
 .brand .card img {
   filter:invert(100%);
 }
 
-.brand .sx .card:nth-child(1){
+/*--istruzioni colori card quadrati brand--*/
+.brand .sx .card:nth-child(1) {
   background-color: rgb(162, 211, 155);
 }
 
-.brand .sx .card:nth-child(2){
+.brand .sx .card:nth-child(2) {
   background-color: rgb(97, 8, 43);
 }
 
-.brand .sx .card:nth-child(3){
+.brand .sx .card:nth-child(3) {
   background-color: rgb(0, 147, 206);
 }
 
-.brand .sx .card:nth-child(4){
+.brand .sx .card:nth-child(4) {
   background-color: rgb(255, 28, 28);
 }
 
-.brand .dx .card:nth-child(1){
+.brand .dx .card:nth-child(1) {
   background-color: rgb(213, 0, 31);
 }
 
-.brand .dx .card:nth-child(2){
+.brand .dx .card:nth-child(2) {
   background-color: rgb(180, 208, 231);
 }
 
-.brand .dx .card:nth-child(3){
+.brand .dx .card:nth-child(3) {
   background-color: rgb(13, 36, 129);
 }
 
-.brand .dx .card:nth-child(4){
+.brand .dx .card:nth-child(4) {
   background-color: rgb(255, 216, 48);
 }
+/*--/istruzioni colori card quadrati brand--*/
 
+/*formattazione quadrato con testo sezione brand*/
 .square-content.txt {
   padding-top: 50px;
   padding-left: 40px;
@@ -577,79 +662,93 @@ h2{
   font-size: 12px;
 }
 
-.square-content.txt img{
+/*formattazione immagine quadrato con testo sezione brand*/
+.square-content.txt img {
   width: 50%;
 }
 
-.square-content.txt hr{
+/*formattazione linea quadrato con testo sezione brand*/
+.square-content.txt hr {
   margin-top: 30px;
   margin-bottom: 30px;
   width: 70px;
 }
 
-.square-content.txt p{
+/*formattazione paragrafo quadrato con testo sezione brand*/
+.square-content.txt p {
   margin-bottom: 30px;
 }
 
-.square-content .card:active{
+/*classe active per card con loghi brand*/
+.square-content .card:active {
   border: 10px solid rgba(255, 255, 255, 0.648);
 }
 
+/*formattazione sezione prova*/
 .prova {
   background-color: rgb(180, 208, 231);
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
+/*formattazione titolo sezione prova*/
 .prova-titolo {
   width: 60%;
   color: rgb(97, 8, 43);
 }
 
+/*formattazione area bottone sezione prova*/
 .prova-button {
   width: 40%;
 }
 
-.prova-button .bottone{
+/*formattazione bottone sezione prova*/
+.prova-button .bottone {
   background-color: white;
   padding-left: 30px;
   padding-right: 30px;
 }
 
-.prova-button .bottone a{
+/*formattazione link bottone sezione prova*/
+.prova-button .bottone a {
   color: black;
   text-decoration: none;
   font-size: 11px;
 }
 
+/*formattazione sezione domande frequenti*/
 .q-and-a {
   padding: 100px 0;
 }
 
-
-.q-and-a h2{
+/*formattazione titolo sezione domande frequenti*/
+.q-and-a h2 {
   margin-bottom: 50px;
 }
 
-.question{
+/*formattazione area domanda*/
+.question {
   width: 100%;
   margin: 40px 0;
   position: relative;
 }
 
-.fa-chevron-down, .fa-chevron-up{
+/*formattazione chevron area domande frequenti*/
+.fa-chevron-down, .fa-chevron-up {
   position: absolute;
   right: 30px;
   top: 0px;
   font-size: 12px;
 }
 
-.fa-chevron-up {
-  display: none;
-}
-
+/*formattazione titolo h3 area domanda*/
 .question h3{
   font-size: 12px;
+}
+
+/*--/istruzione per far comparire paragrafo all'hover della domanda e cambiare chevron--*/
+.fa-chevron-up {
+  display: none;
 }
 
 .question p {
@@ -669,53 +768,60 @@ h2{
 .question h3:hover ~ .fa-chevron-up {
   display: block;
 }
+/*--/istruzione per far comparire paragrafo all'hover della domanda e cambiare chevron--*/
 
+/*foramttazione area testo tranne area testo jumbotron*/
 .text:not(.jumbotron .text) {
   width: 300px;
   height: 300px;
   margin-left: 30px;
 }
 
-.img-partner{
-  width: 600px;
-}
-
+/*formattazione container footer*/
 footer .container {
   width: 70%;
 }
 
+/*dimensioni top footer e bottom footer*/
 .footer-top, .footer-bottom {
   width: 100%;
 }
 
+/*formattazione footer top*/
+.footer-top {
+  margin-bottom: 100px;
+}
+
+/*formattazione footer bottom*/
+.footer-bottom {
+  color: rgb(153, 153, 153);
+  font-size: 12px;
+}
+
+/*formattazione h3 footer*/
 footer h3 {
   font-size: 15px;
   margin-bottom: 20px;
 }
 
+/*formattazione punti lista menu footer*/
+footer .menu li {
+  margin-bottom: 10px;
+}
+
+/*formattazione link punti lista menu footer*/
 footer .menu li a {
   color: white;
   text-decoration: none;
   font-size: 12px;
 }
 
+/*formattazione link punti lista menu footer all'hover*/
 footer .menu li a:hover {
   text-decoration: underline;
 }
 
-
-footer .menu li{
-  margin-bottom: 10px;
-}
-.footer-top {
-  margin-bottom: 100px;
-}
-
-.footer-bottom {
-  color: rgb(153, 153, 153);
-  font-size: 12px;
-}
-
+/*formattazione linea footer*/
 footer hr {
   width: 100px;
   margin-bottom: 50px;
