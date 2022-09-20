@@ -189,11 +189,6 @@ header .bottone {
   width: 600px;
 }
 
-/*fomattazione linea*/
-hr {
-  color: rgb(165, 165, 165);
-}
-
 /*formattazione bottone*/
 .bottone {
   padding: 5px;
@@ -412,7 +407,10 @@ hr {
 }
 
 /*formattazione linea dopo link*/
-.link-acquista-ora hr {
+.linea::after {
+  display: block;
+  content: '';
+  border: 1px solid rgb(165, 165, 165);
   width: 50px;
   margin-top: 20px;
 }
@@ -587,29 +585,14 @@ hr {
 /*dimensione quadrati*/
 .square {
   width: calc(100%/3);
+  aspect-ratio: 1/1;
 }
 
-/*--istruzioni per rapporto fisso tra lati dei quadrati--*/
-.inner-square {
-  padding-top: 100%;
-  height: 0;
-  overflow: hidden;
-  position: relative;
-}
-
-.square-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-/*--/istruzioni per rapporto fisso tra latidei quadrati--*/
 
 /*formattazione card con loghi brand*/
 .brand .card {
-  height: calc(100%/2);
   width: calc(100%/2);
+  aspect-ratio: 1/1;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -668,7 +651,7 @@ hr {
 }
 
 /*formattazione linea quadrato con testo sezione brand*/
-.square-content.txt hr {
+.square-content.txt .linea::after {
   margin-top: 30px;
   margin-bottom: 30px;
   width: 70px;
@@ -717,27 +700,33 @@ hr {
 }
 
 /*formattazione sezione domande frequenti*/
-.q-and-a {
+.faq {
   padding: 100px 0;
 }
 
 /*formattazione titolo sezione domande frequenti*/
-.q-and-a h2 {
+.faq h2 {
   margin-bottom: 50px;
 }
 
 /*formattazione area domanda*/
 .question {
   width: 100%;
-  margin: 40px 0;
+  padding: 40px 0;
   position: relative;
+  border-bottom: 1.5px solid rgb(165, 165, 165);
+}
+
+/*formattazione bordo superiore box domande */
+.question:first-of-type {
+  border-top: 1.5px solid rgb(165, 165, 165);
 }
 
 /*formattazione chevron area domande frequenti*/
 .fa-chevron-down, .fa-chevron-up {
   position: absolute;
   right: 30px;
-  top: 0px;
+  top: 40px;
   font-size: 12px;
 }
 
@@ -822,7 +811,7 @@ footer .menu li a:hover {
 }
 
 /*formattazione linea footer*/
-footer hr {
+footer .linea::after {
   width: 100px;
   margin-bottom: 50px;
   color: white;
