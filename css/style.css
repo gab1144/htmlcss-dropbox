@@ -243,11 +243,63 @@ header .bottone {
   padding-bottom: 40px;
 }
 
-/*formattazione scritta radio button*/
+/*
+formattazione scritta radio button
 .radio-b label {
   margin-right: 20px;
   font-size: 12px;
 }
+*/
+
+/*--istruzioni radio button personalizzato--*/
+.container-radio {
+  display: block;
+  position: relative;
+  padding-left: 17px;
+  cursor: pointer;
+  font-size: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-right: 40px;
+}
+
+.container-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  border: 1.5px solid rgb(215, 215, 218);
+  border-radius: 50%;
+}
+
+.container-radio:hover input ~ .checkmark {
+  border: 2px solid #ccc;
+  background: white;
+}
+
+.container-radio input:checked ~ .checkmark {
+  border: 3.5px solid rgb(0, 97, 255);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container-radio input:checked ~ .checkmark:after {
+  display: block;
+}
+/*--/istruzioni radio button personalizzato--*/
 
 /*dimensione area piani business*/
 .piani-b {
