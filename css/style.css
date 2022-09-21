@@ -11,18 +11,18 @@ body {
 /*header e menu fissato sempre sopra agli altri elementi con z-index*/
 header {
   position: fixed;
-  height: 60px;
+  height: 80px;
   top: 0;
   width: 100%;
   z-index: 999;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: white;
 }
 
 /*padding per mantenere effetto menu fissato senza coprire parte del main*/
 main {
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 /*formattazione footer*/
@@ -35,14 +35,14 @@ footer {
 
 /*formattazione titolo h1 (jumbotron)*/
 h1 {
-  font-size: 50px;
-  line-height: 75px;
-  font-weight: 900;
+  font-size: 70px;
+  line-height: 100px;
+  font-weight: 800;
 }
 
 /*formattazione titolo h2*/
 h2 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 /*dimensione immagini*/
@@ -94,12 +94,12 @@ img {
 
 /*margini link*/
 .menu a, .logo a {
-  margin-right: 30px;
+  margin-right: 35px;
 }
 
 /*dimensione logo*/
 .logo a img {
-  width: 90px;
+  width: 130px;
 }
 
 /*formattazione marcatori liste header e footer*/
@@ -122,7 +122,7 @@ header nav ul.menu li {
 header nav ul.menu li a {
   color: black;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 17px;
   height: fit-content;
 }
 
@@ -135,14 +135,16 @@ header .menu li:hover {
 header .bottone {
   color: white;
   text-decoration: none;
-  font-size: 12px;
-  padding-left: 10px;
-  padding-right: 10px;
+  font-size: 17px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 /*dimensione e margini container*/
 .container {
-  width: 55%;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -153,28 +155,27 @@ header .bottone {
 
 /*dimensioni container jumbotron*/
 .jumbotron .container {
-  width: 65%;
-  padding-top: 50px;
+  max-width: 1200px;
+  padding-top: 80px;
 }
 
 /*formattazione titolo jumbotron*/
 .jumbotron .titolo {
-  width: 100%;
-  font-size: 75px;
+  max-width: 1050px;
 }
 
 /*dimensione bottom jumbotron*/
 .jumbo-bottom {
   width: 100%;
-  height: 350px;
+  height: 450px;
   padding-top: 50px;
 }
 
 /*formattazione testo jumbotron*/
 .jumbotron .text {
   width: calc(100%/3);
-  font-size: 13px;
-  line-height: 17px;
+  font-size: 18px;
+  line-height: 25px;
   height: 100%;
 }
 
@@ -186,7 +187,7 @@ header .bottone {
 
 /*dimensione immagine jumbotron*/
 .img-jumbo img {
-  width: 600px;
+  width: 800px;
 }
 
 /*formattazione bottone*/
@@ -215,19 +216,19 @@ header .bottone {
 /*formattazione span jumbotron*/
 .jumbotron span.annulla {
   display: block;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 50px;
 }
 
 /*formattazione icona jumbotron*/
 .jumbotron i {
-  font-size: 30px;
+  font-size: 50px;
   padding-bottom: 10px;
 }
 
 /*formattazione senzione piano business*/
 .piano-business {
-  padding-top: 100px;
+  padding-top: 150px;
   padding-bottom: 50px;
 }
 
@@ -239,30 +240,22 @@ header .bottone {
 
 /*formattazione rafio button*/
 .radio-b {
-  padding-top: 50px;
-  padding-bottom: 40px;
+  padding-top: 70px;
+  padding-bottom: 50px;
 }
-
-/*
-formattazione scritta radio button
-.radio-b label {
-  margin-right: 20px;
-  font-size: 12px;
-}
-*/
 
 /*--istruzioni radio button personalizzato--*/
 .container-radio {
   display: block;
   position: relative;
-  padding-left: 17px;
+  padding-left: 25px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 15px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  margin-right: 40px;
+  margin-right: 50px;
 }
 
 .container-radio input {
@@ -275,19 +268,19 @@ formattazione scritta radio button
   position: absolute;
   top: 0;
   left: 0;
-  height: 15px;
-  width: 15px;
-  border: 1.5px solid rgb(215, 215, 218);
+  height: 20px;
+  width: 20px;
+  border: 2px solid rgb(215, 215, 218);
   border-radius: 50%;
 }
 
 .container-radio:hover input ~ .checkmark {
-  border: 2px solid #ccc;
+  border: 2.5px solid #ccc;
   background: white;
 }
 
 .container-radio input:checked ~ .checkmark {
-  border: 3.5px solid rgb(0, 97, 255);
+  border: 4px solid rgb(0, 97, 255);
 }
 
 .checkmark:after {
@@ -309,7 +302,7 @@ formattazione scritta radio button
 /*formattazione scheda piano business*/
 .piano {
   width: calc(100%/3);
-  margin-right:25px;
+  margin-right:50px;
 }
 
 /*formattazione scheda piano business tranne piano in orizzontale*/
@@ -325,20 +318,20 @@ formattazione scritta radio button
 
 /*formattazione bordo tranne bordo piano in orizzontale*/
 .bordo:not(.piano.orz .bordo) {
-  min-height: 720px;
+  min-height: 950px;
 }
 
 /*formattazione gruppo utente del piano*/
 .piano .gruppo {
   width: 100%;
-  height: 35px;
+  height: 40px;
   display: flex;
   align-content: center;
   justify-content: center;
   border-bottom: 1px solid black;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 /*formattazione span gruppo utenti piano*/
@@ -353,24 +346,25 @@ formattazione scritta radio button
 
 /*formattazione area informazioni piano tranne piano in orizzontale*/
 .piano .info:not(.piano.orz .info) {
-  min-height: 285px;
+  min-height: 380px;
 }
 
 /*padding testo interno a scheda piano*/
 .padding-piano {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 /*formattazione titolo h3 area informazioni piano*/
 .piano .info h3 {
-  padding-top: 30px;
+  padding-top: 35px;
+  font-size: 20px;
 }
 
 /*formattazione span area informazioni piano*/
 .piano .info span {
   display: block;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 /*formattazione primo span dopo titolo h3 area informazioni piano*/
@@ -381,20 +375,20 @@ formattazione scritta radio button
 /*formattazione secondo span dopo titolo h3 area informazioni piano*/
 .piano .info h3 + span + span {
   padding-top: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   color: rgb(166, 151, 158);
 }
 
 /*formattazione lista area informazioni piano*/
 .piano .info ul {
   list-style: none;
-  font-size: 12px;
+  font-size: 15px;
   margin-bottom: 30px;
 }
 
 /*formattazione punti lista informazioni piano*/
 .piano .info ul li {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   display: flex;
 }
 
@@ -441,43 +435,36 @@ formattazione scritta radio button
   margin: auto;
   width: 100%;
   text-align: center;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 10px 35px;
 }
 
 /*formattazione link bottone piano business*/
 .piano .bottone  a {
   color: white;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 /*formattazione link dopo bottone*/
 .link-acquista-ora {
-  padding-top: 20px;
-  font-size: 12px;
+  padding-top: 35px;
+  font-size: 15px;
 }
 
 /*formattazione linea dopo link*/
 .linea::after {
   display: block;
   content: '';
-  border: 1px solid rgb(165, 165, 165);
-  width: 50px;
-  margin-top: 20px;
-}
-
-/*formattazione area punti salienti del piano*/
-.salienti {
-  padding-left: 20px;
-  padding-right: 20px;
+  border: 0.5px solid rgb(165, 165, 165);
+  width: 45px;
+  margin-top: 40px;
 }
 
 /*formattazione titolo h4 area punti salienti del piano*/
 .salienti h4 {
-  font-size: 12px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  font-size: 15px;
+  padding-top: 55px;
+  padding-bottom: 35px;
 }
 
 /*formattazione marcatore lista punti salienti*/
@@ -487,8 +474,8 @@ formattazione scritta radio button
 
 /*formattazione punti lista punti salienti*/
 .salienti ul li {
-  font-size: 12px;
-  padding-bottom: 20px;
+  font-size: 15px;
+  padding-bottom: 25px;
   display: flex;
 }
 
@@ -499,6 +486,7 @@ formattazione scritta radio button
   margin-right: 5px;
   content: "\f00c";
   color: rgb(36, 104, 255);
+  font-size: 15px;
 }
 
 /*dimensione area piano in orizzontale*/
@@ -510,12 +498,12 @@ formattazione scritta radio button
 /*formattazione span dopo titolo h3 piano in orizzontale*/
 .piano.orz h3 + span {
   font-weight: 700;
-  padding-bottom: 20px;
+  padding-bottom: 55px;
 }
 
 /*formattazione paragrafo piano in orizzontale*/
 .piano.orz p {
-  font-size: 12px;
+  font-size: 15px;
 }
 
 /*formattazione area bottone piano in orizzontale*/
@@ -529,21 +517,19 @@ formattazione scritta radio button
 .piano.orz .bottone {
   width: fit-content;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 30px;
+  right: 30px;
 }
 
 /*formattazione sezione informazioni piano in orizzontale*/
 .piano.orz .info {
-  padding-left: 20px;
-  padding-right: 20px;
   width: 60%;
   padding-bottom: 30px;
 }
 
 /*formattazione container sezione partner*/
 .partner .container {
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 /*formattazione bottone sezione partner*/
@@ -551,26 +537,39 @@ formattazione scritta radio button
   background-color: white;
   border: 1px solid black;
   margin-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /*formattazione link bottone sezione partner*/
 .partner .bottone a {
   color: black;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 /*formattazione titolo h2 sezione partner*/
 .partner .text h2 {
   margin-bottom: 15px;
   margin-top: 60px;
-  font-size: 18px;
+  font-size: 25px;
+  line-height: 35px;
 }
 
 /*formattazione paragrafo sezione partner*/
 .partner .text p {
-  font-size: 14px;
+  font-size: 17px;
+  line-height: 25px;
 }
+
+.partner .text {
+  min-width: 400px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 
 /*dimensione immagine sezione partner*/
 .img-partner{
@@ -579,7 +578,7 @@ formattazione scritta radio button
 
 /*formattazione sezione informazioni Dropbox Business*/
 .info-business {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 /*formattazione area card sezione informazioni Dropbox Business*/
@@ -602,19 +601,21 @@ formattazione scritta radio button
 /*formattazione paragrafo card sezione informazioni Dropbox Business*/
 .card p {
   padding-top: 25px;
-  font-size: 12px;
+  font-size: 17px;
+  line-height: 23px;
 }
 
 /*formattazione immagine card sezione informazioni Dropbox Business*/
 .info-business .card img {
-  width: 235px;
+  width: 300px;
   align-self: center;
+  margin-bottom: 20px;
 }
 
 /*formattazione sezione team*/
 .team {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 160px;
+  padding-bottom: 150px;
 }
 
 /*formattazione titolo h2 sezione team*/
@@ -625,7 +626,7 @@ formattazione scritta radio button
 
 /*formattazione link sezione team*/
 .team a {
-  font-size: 12px;
+  font-size: 15px;
 }
 
 /*formattazione sezione brand*/
@@ -646,12 +647,13 @@ formattazione scritta radio button
   width: calc(100%/2);
   aspect-ratio: 1/1;
   padding-left: 40px;
-  padding-right: 40px;
 }
 
 /*formattazione immagini loghi brand (invert per modificare il colore)*/
 .brand .card img {
   filter:invert(100%);
+  min-width: 160px;
+  max-width: calc(100%/2);
 }
 
 /*--istruzioni colori card quadrati brand--*/
@@ -693,8 +695,9 @@ formattazione scritta radio button
   padding-top: 50px;
   padding-left: 40px;
   padding-right: 30px;
-  overflow-y: scroll;
-  font-size: 12px;
+  height: 100%;
+  overflow: scroll;
+  font-size: 15px;
 }
 
 /*formattazione immagine quadrato con testo sezione brand*/
@@ -704,51 +707,62 @@ formattazione scritta radio button
 
 /*formattazione linea quadrato con testo sezione brand*/
 .square-content.txt .linea::after {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 70px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  width: 105px;
 }
 
 /*formattazione paragrafo quadrato con testo sezione brand*/
 .square-content.txt p {
   margin-bottom: 30px;
+  font-size: 17px;
+  line-height: 25px;
 }
 
 /*classe active per card con loghi brand*/
 .square-content .card:active {
-  border: 10px solid rgba(255, 255, 255, 0.648);
+  border: 15px solid rgba(255, 255, 255, 0.648);
+}
+
+/*formattazione spna quadrato con testo sezione brand*/
+.square-content.txt span {
+  font-size: 17px;
 }
 
 /*formattazione sezione prova*/
 .prova {
   background-color: rgb(180, 208, 231);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 135px;
+  padding-bottom: 135px;
 }
 
 /*formattazione titolo sezione prova*/
 .prova-titolo {
-  width: 60%;
+  max-width: 500px;
   color: rgb(97, 8, 43);
+  line-height: 55px;
 }
 
 /*formattazione area bottone sezione prova*/
 .prova-button {
-  width: 40%;
+  width: 50%;
+  justify-content: flex-end;
 }
 
 /*formattazione bottone sezione prova*/
 .prova-button .bottone {
   background-color: white;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 /*formattazione link bottone sezione prova*/
 .prova-button .bottone a {
   color: black;
   text-decoration: none;
-  font-size: 11px;
+  font-size: 17px;
 }
 
 /*formattazione sezione domande frequenti*/
@@ -779,12 +793,12 @@ formattazione scritta radio button
   position: absolute;
   right: 30px;
   top: 40px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 /*formattazione titolo h3 area domanda*/
 .question h3{
-  font-size: 12px;
+  font-size: 15px;
 }
 
 /*--/istruzione per far comparire paragrafo all'hover della domanda e cambiare chevron--*/
@@ -795,7 +809,7 @@ formattazione scritta radio button
 .question p {
   display: none;
   padding-top: 50px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .question h3:hover ~ p {
@@ -820,7 +834,7 @@ formattazione scritta radio button
 
 /*formattazione container footer*/
 footer .container {
-  width: 70%;
+  max-width: 1200px;
 }
 
 /*dimensioni top footer e bottom footer*/
@@ -836,25 +850,25 @@ footer .container {
 /*formattazione footer bottom*/
 .footer-bottom {
   color: rgb(153, 153, 153);
-  font-size: 12px;
+  font-size: 15px;
 }
 
-/*formattazione h3 footer*/
+/*formattazione h4 footer*/
 footer h4 {
-  font-size: 15px;
-  margin-bottom: 20px;
+  font-size: 25px;
+  margin-bottom: 30px;
 }
 
 /*formattazione punti lista menu footer*/
 footer .menu li {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 /*formattazione link punti lista menu footer*/
 footer .menu li a {
   color: white;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 17px;
 }
 
 /*formattazione link punti lista menu footer all'hover*/
